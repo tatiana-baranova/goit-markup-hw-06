@@ -591,6 +591,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 .text-form-footer {
@@ -625,7 +626,6 @@ img {
 }
 
 .footer-btn {
-    margin-left: 24px;
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
