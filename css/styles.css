@@ -636,7 +636,7 @@ img {
     height: 40px;
     background-color: #4D5AE5;
     border: none;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -664,6 +664,8 @@ img {
     background-color: #31d0aa;
 }
 
+
+
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
@@ -680,10 +682,105 @@ img {
     background-color: #fcfcfc;
     border-radius: 4px;
     transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px;
+}
 
+.button-icons {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #e7e9fc;
+    stroke-width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal .button-icons:hover,
+.button-icons:focus {
+    border: none;
+    background-color: #404bbf;
+}
+
+.modal .button-icons .icon-close:hover,
+.icon-close:focus {
+    fill: #ffffff
+}
+
+.icon-close {
+    fill: #2e2f42;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modalP {
     transform: translate(-50%, -50%) scale(1.5);
+}
+
+.text-modal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+}
+
+.modal-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+    width: 360px;
+    min-height: 336px;
+}
+
+.form-content {
+    margin-bottom: 8px;
+}
+
+.modal-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.input-content {
+    position: relative;
+}
+
+.modal-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding-left: 38px;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+}
+
+.form-content .input-content .modal-input:focus {
+    border-color: #4d5ae5;
 }
