@@ -714,11 +714,11 @@ img {
     background-color: #404bbf;
 }
 
-.modal .button-icons .icon-close:hover {
+.button-icons:hover>.icon-close {
     fill: #ffffff
 }
 
-.modal .button-icons .icon-close:focus {
+.button-icons:focus>.icon-close {
     fill: #ffffff
 }
 
