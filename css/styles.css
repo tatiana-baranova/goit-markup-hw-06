@@ -686,16 +686,15 @@ img {
     padding: 72px 24px 24px 24px;
 }
 
-.button-icons {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+.close-button {
     position: absolute;
     top: 24px;
     right: 24px;
     border-radius: 4px;
     width: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     height: 24px;
     border-radius: 50%;
-
     background-color: #e7e9fc;
     stroke-width: 1px;
     border: none;
@@ -709,17 +708,17 @@ img {
 
 }
 
-.modal .button-icons:hover,
-.button-icons:focus {
+.modal .close-button:hover,
+.close-button:focus {
     border: none;
     background-color: #404bbf;
 }
 
-.button-icons:hover>.icon-close {
+.close-button:hover>.icon-close {
     fill: #ffffff
 }
 
-.button-icons:focus>.icon-close {
+.close-button:focus>.icon-close {
     fill: #ffffff
 }
 
@@ -858,7 +857,7 @@ img {
 }
 
 .fake-checkbox {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
