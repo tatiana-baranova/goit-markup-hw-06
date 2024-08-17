@@ -687,6 +687,7 @@ img {
 }
 
 .button-icons {
+    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 24px;
     right: 24px;
@@ -694,7 +695,7 @@ img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+
     background-color: #e7e9fc;
     stroke-width: 1px;
     border: none;
