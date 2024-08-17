@@ -56,7 +56,9 @@
       <section class="section-hero">
         <div class="container hero-container">
           <h1 class="title-section">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -557,9 +559,9 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="button-icons" type="button">
+        <button class="button-icons" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -575,6 +577,7 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
               />
               <svg class="icon-user-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
@@ -589,6 +592,7 @@
                 type="tel"
                 name="user-tel"
                 id="user-tel"
+                required
               />
               <svg class="icon-user-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black"></use>
@@ -603,6 +607,7 @@
                 type="email"
                 name="email"
                 id="user-email"
+                required
               />
               <svg class="icon-user-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black"></use>
@@ -620,23 +625,27 @@
           </div>
           <div class="checkbox">
             <input
-              class="visually-hidden"
+              class="input-checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
             <label class="user-privacy" for="user-privacy"
-              >I accept the terms and conditions of the
-              <span class="fake-checkbox">
-                <svg class="icon-checkbox" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
+              ><span class="fake-checkbox">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector-check"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-link">Privacy Policy</a>
             </label>
           </div>
+          <button class="button-send" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
