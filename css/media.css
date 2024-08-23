@@ -86,7 +86,49 @@
         ;
     }
 
+    .section-hero {
+        padding: 112px 0;
+    }
+
+    .title-section {
+        max-width: 496px;
+        height: 120;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #404BBF
+    }
+
+    .button {
+        min-width: 169px;
+    }
+
+    .text-container {
+        width: 768px;
+    }
+
+    .text-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .item-list {
+        flex-basis: calc((100% - 24px) / 2);
+
+    }
+
+    .title-text {}
 }
+
+
 
 
 
@@ -126,4 +168,14 @@
     .address-link {
         margin-left: auto;
     }
+
+    .section-hero {
+        padding: 188px 0;
+        max-width: 1440px;
+    }
+
+    .title-section {
+        margin-bottom: 48px;
+    }
+
 }
