@@ -814,7 +814,7 @@ button {
 }
 
 .user-privacy {
-    /* display: flex; */
+    display: flex;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -822,12 +822,11 @@ button {
     letter-spacing: 0.04em;
     color: #8e8f99;
     align-items: center;
-    /* gap: 8px; */
+    gap: 8px;
     margin-bottom: 24px;
 }
 
 .fake-checkbox {
-    margin-right: 8px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -852,9 +851,9 @@ button {
     color: #4d5ae5;
 }
 
-/* .privacy-link-text {
+.privacy-link-text {
     width: 231px;
-} */
+}
 
 .button-send {
     display: block;

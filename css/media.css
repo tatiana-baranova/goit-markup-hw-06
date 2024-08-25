@@ -286,9 +286,9 @@
         flex-wrap: nowrap;
     }
 
-    /* .privacy-link-text {
+    .privacy-link-text {
         width: 338px;
-    } */
+    }
 
     .button-send:hover,
     .button-send:focus {
