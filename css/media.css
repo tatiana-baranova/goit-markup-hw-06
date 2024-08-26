@@ -167,7 +167,7 @@
     }
 
     .container-footer {
-        padding-left: 92px;
+        width: 584px;
         row-gap: 72px;
         align-items: stretch;
     }
