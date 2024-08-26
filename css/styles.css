@@ -526,6 +526,10 @@ button {
     margin: 0 auto;
 }
 
+.footer-logo-text {
+    margin-bottom: 72px;
+}
+
 .link-text-footer {
     display: block;
     font-weight: 400;
